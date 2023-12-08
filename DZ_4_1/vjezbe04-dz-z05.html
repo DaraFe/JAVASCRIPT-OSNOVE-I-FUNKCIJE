@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    var objekt1 = {firstName: "Marko", lastName: "Maric", age: 40, eyeColor: "black"};
+
+    var objekt2 = {firstName: "Nikola", lastName: "Zeljko", age: 19, eyeColor: "brown"};
+    var objekt3 = {firstName: "Luka", lastName: "Zeljko", age: 25, eyeColor: "brown"};
+    var objekt4 = {firstName: "Mia", lastName: "Zeljko", age: 27, eyeColor: "green"};
+
+    var objekti = [objekt1, objekt2, objekt3, objekt4];
+
+    for (var i = 0; i < objekti.length; i++) 
+	{
+        for (var key in objekti[i]) 
+		{
+            document.write('&emsp;' + key + ': ' + objekti[i][key] + '<br>');
+        }
+        document.write('</p>');
+    }
+</script>
+</body>
+</html>

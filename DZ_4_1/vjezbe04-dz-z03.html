@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    for (var i = 1; i <= 1000; i++) 
+	{
+        var Prost = true;
+
+        if (i < 2) 
+		{
+            Prost = false;
+        }
+		else 
+		{
+			for (var j = 2; j < i; j++) 
+			{
+				if (i % j === 0) 
+				{
+					Prost = false;
+					break;
+				}
+			}
+		}
+        if (Prost) 
+		{
+            console.log('Prost broj:', i);
+            document.write('Prost broj: ' + i + '<br>');
+        }
+    }
+</script>
+</body>
+</html>

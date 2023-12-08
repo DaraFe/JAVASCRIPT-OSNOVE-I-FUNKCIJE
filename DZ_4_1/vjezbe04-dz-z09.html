@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+	 function savrseniBrojevi(doBroja) 
+	 {
+        for (var i = 1; i <= doBroja; i++) 
+		{
+            if (SavrsenBroj(i)) 
+			{
+                document.write('Savršen broj: ' + i + '<br>');
+            }
+        }
+    }
+    function SavrsenBroj(broj) {
+        var suma = 0;
+        for (var j = 1; j <= broj / 2; j++) {
+            if (broj % j === 0) {
+                suma += j;
+            }
+        }
+        return suma === broj;
+    }
+
+    savrseniBrojevi(69420);
+</script>
+
+</body>
+</html>
